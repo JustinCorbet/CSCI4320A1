@@ -47,7 +47,7 @@ public class Person2 {
 
 		return randomizer.toString();
 
-	  return null;
+	//  return null;
 	}
 	/**
 	 * Return a string rep of this object
