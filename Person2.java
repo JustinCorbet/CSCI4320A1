@@ -31,8 +31,22 @@ public class Person2 {
 	 */
 	private String calc(String input) {
 	  //Person 2 put your implementation here
-	  return null;
+		
+		StringBuilder randomizer = new StringBuilder(input);
+
+		for (int i = randomizer.length() - 1; i > 0; i--)
+		{
+			int k = new Random().nextInt(i + 1);
+
+			char tmp = randomizer.charAt(i);
+			randomizer.setCharAt(i, randomizer.charAt(k));
+			randomizer.setCharAt(k, tmp);
+		}
+
+		return randomizer.toString();
+	 // return null;
 	}
+	 
 	/**
 	 * Return a string rep of this object
 	 * that varies with an input string
