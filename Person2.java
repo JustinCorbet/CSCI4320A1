@@ -31,9 +31,7 @@ public class Person2 {
 	 */
 	private String calc(String input) {
 	  //Person 2 put your implementation here
-		//for i from n - 1 downto 1 do
-			//k = random integer with 0 <= k <=i
-			//exchange a[k] and a[i]
+
 		StringBuilder randomizer = new StringBuilder(input);
 
 		for (int i = randomizer.length() - 1; i > 0; i--)
