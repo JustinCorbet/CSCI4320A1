@@ -1,4 +1,4 @@
-package edu.clayton.csit.antlab.person;
+package antlab.person;
 
 /**
  *  A simple class for person 1
@@ -10,15 +10,16 @@ package edu.clayton.csit.antlab.person;
  */
 public class Person1 {
   /** Holds the persons real name */
-  private String name;
-  private int rotation;
+  private final String name;
+  private final int rotation;
   	/**
 	 * The constructor, takes in the persons
 	 * name
 	 * @param pname the person's real name
 	 */
-  public Person1(String pname) {
+  public Person1(String pname, int r) {
     name = pname;
+	rotation = r;
   }
   	/**
 	 * This method should take the string
@@ -30,10 +31,9 @@ public class Person1 {
 	 * @param input the string to be modified
 	 * @return the modified string
 	 */
-	private String calc(String input, int rotation) {
-		return calc(input, input.length() - rotation)
-	  return null;
-	}
+	private String calc(String input, int rotate) {
+		return calc(input, input.length() - rotate);
+			}
 	
 	/**
 	 * Return a string rep of this object
